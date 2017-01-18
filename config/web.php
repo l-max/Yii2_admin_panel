@@ -43,6 +43,10 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager',
+            'defaultRoles' => ['user','moder','admin'],
+        ],
         /*
         'urlManager' => [
             'enablePrettyUrl' => true,
